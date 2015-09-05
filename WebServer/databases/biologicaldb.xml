@@ -1,0 +1,1239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.1.4
+- http://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Mag 15, 2014 alle 01:57
+- Versione del server: 5.6.15-log
+- PHP Version: 5.5.8
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="biologicaldb" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="log">
+                CREATE TABLE `log` (
+                  `sensorID` int(11) NOT NULL,
+                  `timestamp` varchar(255) NOT NULL,
+                  `temperature` float NOT NULL,
+                  `humidity` float NOT NULL,
+                  `voltage` float NOT NULL
+                ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="sensors">
+                CREATE TABLE `sensors` (
+                  `sensorID` int(11) NOT NULL,
+                  `X` int(11) DEFAULT NULL,
+                  `Y` int(11) DEFAULT NULL,
+                  `current_voltage` float NOT NULL,
+                  `state_ok` tinyint(1) NOT NULL DEFAULT '1',
+                  PRIMARY KEY (`sensorID`)
+                ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="threshold">
+                CREATE TABLE `threshold` (
+                  `t_min` int(11) NOT NULL DEFAULT '13',
+                  `t_max` int(11) NOT NULL DEFAULT '17',
+                  `h_min` int(11) NOT NULL DEFAULT '13',
+                  `h_max` int(11) NOT NULL DEFAULT '17'
+                ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'biologicaldb'
+    -->
+    <database name="biologicaldb">
+        <!-- Tabella log -->
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:50</column>
+            <column name="temperature">27.8</column>
+            <column name="humidity">9.2</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:31</column>
+            <column name="temperature">25.9</column>
+            <column name="humidity">47.1</column>
+            <column name="voltage">2.4</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:50</column>
+            <column name="temperature">28</column>
+            <column name="humidity">12.8</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:32</column>
+            <column name="temperature">25.8</column>
+            <column name="humidity">47</column>
+            <column name="voltage">2.4</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:50</column>
+            <column name="temperature">28.2</column>
+            <column name="humidity">16.2</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:32</column>
+            <column name="temperature">25.8</column>
+            <column name="humidity">46.6</column>
+            <column name="voltage">2.4</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:50</column>
+            <column name="temperature">28.4</column>
+            <column name="humidity">18</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:32</column>
+            <column name="temperature">25.8</column>
+            <column name="humidity">46.5</column>
+            <column name="voltage">2.4</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:49</column>
+            <column name="temperature">27.7</column>
+            <column name="humidity">17.9</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:32</column>
+            <column name="temperature">25.8</column>
+            <column name="humidity">46.3</column>
+            <column name="voltage">2.4</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:49</column>
+            <column name="temperature">27.8</column>
+            <column name="humidity">18.7</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:32</column>
+            <column name="temperature">25.7</column>
+            <column name="humidity">46.3</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:49</column>
+            <column name="temperature">27.1</column>
+            <column name="humidity">17.4</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:32</column>
+            <column name="temperature">25.8</column>
+            <column name="humidity">46.2</column>
+            <column name="voltage">2.4</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:49</column>
+            <column name="temperature">27.5</column>
+            <column name="humidity">17.3</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:32</column>
+            <column name="temperature">25.7</column>
+            <column name="humidity">46.2</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:49</column>
+            <column name="temperature">27.8</column>
+            <column name="humidity">14.9</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:32</column>
+            <column name="temperature">25.8</column>
+            <column name="humidity">46.2</column>
+            <column name="voltage">2.4</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:49</column>
+            <column name="temperature">27.8</column>
+            <column name="humidity">7.6</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:32</column>
+            <column name="temperature">25.7</column>
+            <column name="humidity">46.2</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:49</column>
+            <column name="temperature">26.5</column>
+            <column name="humidity">6.4</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:32</column>
+            <column name="temperature">25.7</column>
+            <column name="humidity">46.2</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:49</column>
+            <column name="temperature">26.7</column>
+            <column name="humidity">9.4</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:32</column>
+            <column name="temperature">25.7</column>
+            <column name="humidity">46.2</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:32</column>
+            <column name="temperature">25.7</column>
+            <column name="humidity">46.2</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:32</column>
+            <column name="temperature">25.6</column>
+            <column name="humidity">46.2</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:32</column>
+            <column name="temperature">25.7</column>
+            <column name="humidity">46.2</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:32</column>
+            <column name="temperature">25.6</column>
+            <column name="humidity">46.2</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:49</column>
+            <column name="temperature">26.8</column>
+            <column name="humidity">11.5</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:49</column>
+            <column name="temperature">27</column>
+            <column name="humidity">12.8</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:33</column>
+            <column name="temperature">25.6</column>
+            <column name="humidity">47</column>
+            <column name="voltage">2.4</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:33</column>
+            <column name="temperature">25.6</column>
+            <column name="humidity">47.3</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:33</column>
+            <column name="temperature">25.6</column>
+            <column name="humidity">50.4</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:33</column>
+            <column name="temperature">25.7</column>
+            <column name="humidity">52.4</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:33</column>
+            <column name="temperature">25.7</column>
+            <column name="humidity">54</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:33</column>
+            <column name="temperature">25.6</column>
+            <column name="humidity">52.8</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:33</column>
+            <column name="temperature">25.7</column>
+            <column name="humidity">51.5</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:33</column>
+            <column name="temperature">25.7</column>
+            <column name="humidity">51</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:33</column>
+            <column name="temperature">25.8</column>
+            <column name="humidity">53.3</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:33</column>
+            <column name="temperature">25.8</column>
+            <column name="humidity">54.1</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:33</column>
+            <column name="temperature">25.8</column>
+            <column name="humidity">53.7</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:33</column>
+            <column name="temperature">25.8</column>
+            <column name="humidity">55.1</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:33</column>
+            <column name="temperature">25.8</column>
+            <column name="humidity">55.6</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:35</column>
+            <column name="temperature">26</column>
+            <column name="humidity">47.6</column>
+            <column name="voltage">2.4</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:49</column>
+            <column name="temperature">27.2</column>
+            <column name="humidity">12.8</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:35</column>
+            <column name="temperature">25.9</column>
+            <column name="humidity">47.1</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:49</column>
+            <column name="temperature">26.9</column>
+            <column name="humidity">11.8</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:35</column>
+            <column name="temperature">25.9</column>
+            <column name="humidity">46.6</column>
+            <column name="voltage">2.4</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:49</column>
+            <column name="temperature">27.5</column>
+            <column name="humidity">11.4</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:35</column>
+            <column name="temperature">25.9</column>
+            <column name="humidity">46.3</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:49</column>
+            <column name="temperature">28.2</column>
+            <column name="humidity">6.5</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:49</column>
+            <column name="temperature">27.5</column>
+            <column name="humidity">59.1</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:49</column>
+            <column name="temperature">25.8</column>
+            <column name="humidity">45.4</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:39</column>
+            <column name="temperature">26</column>
+            <column name="humidity">45.7</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:49</column>
+            <column name="temperature">25.8</column>
+            <column name="humidity">46</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:39</column>
+            <column name="temperature">26.1</column>
+            <column name="humidity">45.7</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:49</column>
+            <column name="temperature">25.8</column>
+            <column name="humidity">46.9</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:39</column>
+            <column name="temperature">26</column>
+            <column name="humidity">45.5</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:49</column>
+            <column name="temperature">25.8</column>
+            <column name="humidity">48.4</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:39</column>
+            <column name="temperature">26</column>
+            <column name="humidity">45.4</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:49</column>
+            <column name="temperature">25.9</column>
+            <column name="humidity">50</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:39</column>
+            <column name="temperature">26</column>
+            <column name="humidity">45.5</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:49</column>
+            <column name="temperature">25.8</column>
+            <column name="humidity">51.7</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:39</column>
+            <column name="temperature">26</column>
+            <column name="humidity">45.7</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:49</column>
+            <column name="temperature">25.9</column>
+            <column name="humidity">54.6</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:39</column>
+            <column name="temperature">26</column>
+            <column name="humidity">46.1</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:49</column>
+            <column name="temperature">25.9</column>
+            <column name="humidity">57.6</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">3</column>
+            <column name="timestamp">12/5 23:39</column>
+            <column name="temperature">26</column>
+            <column name="humidity">46.2</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:49</column>
+            <column name="temperature">26</column>
+            <column name="humidity">59.3</column>
+            <column name="voltage">2.4</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:50</column>
+            <column name="temperature">27.7</column>
+            <column name="humidity">5.3</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:50</column>
+            <column name="temperature">27.6</column>
+            <column name="humidity">2.2</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:50</column>
+            <column name="temperature">29.4</column>
+            <column name="humidity">10.1</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:50</column>
+            <column name="temperature">28.9</column>
+            <column name="humidity">13.8</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:51</column>
+            <column name="temperature">27.2</column>
+            <column name="humidity">48.8</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:51</column>
+            <column name="temperature">27.2</column>
+            <column name="humidity">49.1</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:51</column>
+            <column name="temperature">27.2</column>
+            <column name="humidity">50.7</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:54</column>
+            <column name="temperature">25.4</column>
+            <column name="humidity">44.3</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:54</column>
+            <column name="temperature">25.5</column>
+            <column name="humidity">46.3</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:54</column>
+            <column name="temperature">26.9</column>
+            <column name="humidity">58.5</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:54</column>
+            <column name="temperature">26.8</column>
+            <column name="humidity">1.2</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:54</column>
+            <column name="temperature">27</column>
+            <column name="humidity">4.7</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:54</column>
+            <column name="temperature">28</column>
+            <column name="humidity">10.4</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:54</column>
+            <column name="temperature">28.1</column>
+            <column name="humidity">12.6</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:54</column>
+            <column name="temperature">27.8</column>
+            <column name="humidity">11.7</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:54</column>
+            <column name="temperature">28</column>
+            <column name="humidity">12.9</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:55</column>
+            <column name="temperature">27.8</column>
+            <column name="humidity">11.8</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:55</column>
+            <column name="temperature">28.1</column>
+            <column name="humidity">12.3</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:55</column>
+            <column name="temperature">27.8</column>
+            <column name="humidity">10.3</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:55</column>
+            <column name="temperature">27.5</column>
+            <column name="humidity">5.4</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:55</column>
+            <column name="temperature">27.4</column>
+            <column name="humidity">65.4</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:55</column>
+            <column name="temperature">27.3</column>
+            <column name="humidity">61.1</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:55</column>
+            <column name="temperature">27.2</column>
+            <column name="humidity">57.1</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:55</column>
+            <column name="temperature">27.1</column>
+            <column name="humidity">54.5</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:55</column>
+            <column name="temperature">27</column>
+            <column name="humidity">52.7</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:55</column>
+            <column name="temperature">26.8</column>
+            <column name="humidity">51.7</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:55</column>
+            <column name="temperature">26.7</column>
+            <column name="humidity">50.8</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:55</column>
+            <column name="temperature">26.7</column>
+            <column name="humidity">49.4</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:55</column>
+            <column name="temperature">26.6</column>
+            <column name="humidity">47.9</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:55</column>
+            <column name="temperature">26.5</column>
+            <column name="humidity">46.5</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:55</column>
+            <column name="temperature">26.5</column>
+            <column name="humidity">45.3</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:55</column>
+            <column name="temperature">26.4</column>
+            <column name="humidity">44.8</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:55</column>
+            <column name="temperature">26.4</column>
+            <column name="humidity">44.4</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:55</column>
+            <column name="temperature">26.3</column>
+            <column name="humidity">44.1</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:55</column>
+            <column name="temperature">26.3</column>
+            <column name="humidity">43.8</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:55</column>
+            <column name="temperature">26.2</column>
+            <column name="humidity">44</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:55</column>
+            <column name="temperature">26.2</column>
+            <column name="humidity">43.7</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:55</column>
+            <column name="temperature">26.2</column>
+            <column name="humidity">43.8</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:55</column>
+            <column name="temperature">26.1</column>
+            <column name="humidity">43.7</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:55</column>
+            <column name="temperature">26.1</column>
+            <column name="humidity">43.9</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:56</column>
+            <column name="temperature">26.1</column>
+            <column name="humidity">44.3</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:56</column>
+            <column name="temperature">26</column>
+            <column name="humidity">44.5</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:56</column>
+            <column name="temperature">26</column>
+            <column name="humidity">44.5</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:56</column>
+            <column name="temperature">26</column>
+            <column name="humidity">45</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:56</column>
+            <column name="temperature">26</column>
+            <column name="humidity">45.8</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:56</column>
+            <column name="temperature">26</column>
+            <column name="humidity">46.2</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:56</column>
+            <column name="temperature">25.9</column>
+            <column name="humidity">45.7</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:56</column>
+            <column name="temperature">25.9</column>
+            <column name="humidity">44.8</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:56</column>
+            <column name="temperature">27.5</column>
+            <column name="humidity">53.5</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:56</column>
+            <column name="temperature">28.5</column>
+            <column name="humidity">1.7</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:56</column>
+            <column name="temperature">28.5</column>
+            <column name="humidity">8.9</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:56</column>
+            <column name="temperature">28.9</column>
+            <column name="humidity">12.7</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:56</column>
+            <column name="temperature">29.7</column>
+            <column name="humidity">16.3</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:56</column>
+            <column name="temperature">28.6</column>
+            <column name="humidity">16.6</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:56</column>
+            <column name="temperature">28</column>
+            <column name="humidity">15.6</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:56</column>
+            <column name="temperature">27.7</column>
+            <column name="humidity">14.9</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:56</column>
+            <column name="temperature">27.5</column>
+            <column name="humidity">14.5</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:56</column>
+            <column name="temperature">27.1</column>
+            <column name="humidity">13.1</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:56</column>
+            <column name="temperature">26.8</column>
+            <column name="humidity">10.4</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:56</column>
+            <column name="temperature">26.7</column>
+            <column name="humidity">8.8</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:56</column>
+            <column name="temperature">26.6</column>
+            <column name="humidity">6.5</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:56</column>
+            <column name="temperature">26.5</column>
+            <column name="humidity">3.2</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:56</column>
+            <column name="temperature">26.4</column>
+            <column name="humidity">0.8</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:56</column>
+            <column name="temperature">26.4</column>
+            <column name="humidity">0.5</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:56</column>
+            <column name="temperature">26.3</column>
+            <column name="humidity">0.3</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:57</column>
+            <column name="temperature">26.3</column>
+            <column name="humidity">65</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:57</column>
+            <column name="temperature">26.2</column>
+            <column name="humidity">64.1</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:57</column>
+            <column name="temperature">26.1</column>
+            <column name="humidity">61</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:57</column>
+            <column name="temperature">26</column>
+            <column name="humidity">57.5</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:57</column>
+            <column name="temperature">26</column>
+            <column name="humidity">54.7</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:57</column>
+            <column name="temperature">25.9</column>
+            <column name="humidity">52.3</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:57</column>
+            <column name="temperature">25.8</column>
+            <column name="humidity">50.7</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:57</column>
+            <column name="temperature">25.8</column>
+            <column name="humidity">49.5</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:57</column>
+            <column name="temperature">25.7</column>
+            <column name="humidity">48.4</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:57</column>
+            <column name="temperature">25.7</column>
+            <column name="humidity">47.5</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:57</column>
+            <column name="temperature">25.7</column>
+            <column name="humidity">47.4</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:57</column>
+            <column name="temperature">25.6</column>
+            <column name="humidity">47.8</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:57</column>
+            <column name="temperature">25.6</column>
+            <column name="humidity">47.6</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:57</column>
+            <column name="temperature">25.6</column>
+            <column name="humidity">47.5</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:57</column>
+            <column name="temperature">25.5</column>
+            <column name="humidity">47.8</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:57</column>
+            <column name="temperature">25.5</column>
+            <column name="humidity">48.4</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:57</column>
+            <column name="temperature">25.5</column>
+            <column name="humidity">48.7</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:57</column>
+            <column name="temperature">25.4</column>
+            <column name="humidity">49.6</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:57</column>
+            <column name="temperature">25.4</column>
+            <column name="humidity">49.1</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:57</column>
+            <column name="temperature">25.4</column>
+            <column name="humidity">48.4</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:57</column>
+            <column name="temperature">25.3</column>
+            <column name="humidity">47.8</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 19:57</column>
+            <column name="temperature">25.3</column>
+            <column name="humidity">46.9</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 20:01</column>
+            <column name="temperature">25</column>
+            <column name="humidity">44.6</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 20:01</column>
+            <column name="temperature">25</column>
+            <column name="humidity">44.7</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 20:01</column>
+            <column name="temperature">25</column>
+            <column name="humidity">44.6</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 20:01</column>
+            <column name="temperature">24.9</column>
+            <column name="humidity">44.6</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 20:01</column>
+            <column name="temperature">24.9</column>
+            <column name="humidity">44.6</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 20:01</column>
+            <column name="temperature">24.9</column>
+            <column name="humidity">45.2</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 20:01</column>
+            <column name="temperature">24.9</column>
+            <column name="humidity">47.3</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 20:01</column>
+            <column name="temperature">24.8</column>
+            <column name="humidity">48.2</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 20:01</column>
+            <column name="temperature">24.8</column>
+            <column name="humidity">49.7</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <table name="log">
+            <column name="sensorID">2</column>
+            <column name="timestamp">14/5 20:01</column>
+            <column name="temperature">24.8</column>
+            <column name="humidity">50.6</column>
+            <column name="voltage">2.3</column>
+        </table>
+        <!-- Tabella sensors -->
+        <table name="sensors">
+            <column name="sensorID">3</column>
+            <column name="X">175</column>
+            <column name="Y">233</column>
+            <column name="current_voltage">2.3</column>
+            <column name="state_ok">1</column>
+        </table>
+        <table name="sensors">
+            <column name="sensorID">2</column>
+            <column name="X">NULL</column>
+            <column name="Y">NULL</column>
+            <column name="current_voltage">2.3</column>
+            <column name="state_ok">0</column>
+        </table>
+        <!-- Tabella threshold -->
+        <table name="threshold">
+            <column name="t_min">25</column>
+            <column name="t_max">26</column>
+            <column name="h_min">46</column>
+            <column name="h_max">50</column>
+        </table>
+    </database>
+</pma_xml_export>
