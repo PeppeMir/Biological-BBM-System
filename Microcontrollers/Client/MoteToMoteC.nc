@@ -14,7 +14,7 @@ module MoteToMoteC
 	{
 		interface Boot;
 		interface Leds;
-		interface Timer<TMilli>; 
+		interface Timer<TMilli>;
 	}
 
 	// Radio interfaces
