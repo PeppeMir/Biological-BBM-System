@@ -26,4 +26,5 @@ if ($_POST['temperature'] < $thresholds['t_min'] || $_POST['temperature'] > $thr
 
 mysqli_close($connection);
 
+
 ?>
