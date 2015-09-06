@@ -1,9 +1,0 @@
-C:\Users\Giuseppe\Desktop\C#\SerialReader\SerialReader\bin\Debug\SerialReader.exe.config
-C:\Users\Giuseppe\Desktop\C#\SerialReader\SerialReader\bin\Debug\SerialReader.exe
-C:\Users\Giuseppe\Desktop\C#\SerialReader\SerialReader\bin\Debug\SerialReader.pdb
-C:\Users\Giuseppe\Desktop\C#\SerialReader\SerialReader\obj\Debug\SerialReader.csprojResolveAssemblyReference.cache
-C:\Users\Giuseppe\Desktop\C#\SerialReader\SerialReader\obj\Debug\SerialReader.MainForm.resources
-C:\Users\Giuseppe\Desktop\C#\SerialReader\SerialReader\obj\Debug\SerialReader.Properties.Resources.resources
-C:\Users\Giuseppe\Desktop\C#\SerialReader\SerialReader\obj\Debug\SerialReader.csproj.GenerateResource.Cache
-C:\Users\Giuseppe\Desktop\C#\SerialReader\SerialReader\obj\Debug\SerialReader.exe
-C:\Users\Giuseppe\Desktop\C#\SerialReader\SerialReader\obj\Debug\SerialReader.pdb
